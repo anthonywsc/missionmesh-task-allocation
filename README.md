@@ -1,4 +1,4 @@
-# UDP Swarm Task Auction
+# MissionMesh: UDP Task Allocation for UAV Teams
 
 An event-driven task allocation example for a multi-UAV team. A ground station broadcasts three task bids, and each simulated UAV replies with a bid computed from distance, battery, and payload capability. The station assigns each task to the lowest valid bid.
 
@@ -17,6 +17,10 @@ The demo uses only localhost UDP sockets and JSON datagrams. It is useful for te
 3. The station selects the lowest-cost valid bid before the deadline.
 
 The project intentionally separates auction logic from vehicle autonomy. No real flight command is generated.
+
+![Auction result](results/auction_costs.png)
+
+The plot shows winning bid costs and the selected vehicle for each task.
 
 ## License
 
